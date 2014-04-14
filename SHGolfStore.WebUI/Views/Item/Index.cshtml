@@ -1,0 +1,16 @@
+﻿@model IEnumerable <SHGolfStore.Domain.Entities.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Golf Catalogue</h2>
+
+<br/>
+
+@foreach (var i in Model)
+{ 
+    <div class="item">
+        <h4>@i.ItemName ($@i.ItemPrice )</h4>
+    </div>
+}
